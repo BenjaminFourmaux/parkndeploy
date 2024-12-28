@@ -35,4 +35,4 @@ jobs:
                 region: ${{ secrets.AZURE_REGION }}
                 template: ./infrastructure/main.bicep
                 parameters: project=${{ vars.PROJECT_NAME }} location=${{ secrets.AZURE_REGION }} identifier=${{ vars.AZURZ_RESOURCE_IDENTIFIER }}
-                resourceGroupeName: ${{ env.AZURE_RG_NAME }}
+                resourceGroupName: ${{ env.AZURE_RG_NAME }}
