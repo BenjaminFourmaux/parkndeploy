@@ -2,6 +2,7 @@ targetScope = 'resourceGroup'
 
 param location string
 param project string
+param swaLocation string
 
 param identifier string
 
