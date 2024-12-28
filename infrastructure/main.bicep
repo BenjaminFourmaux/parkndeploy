@@ -20,7 +20,7 @@ module appService 'modules/appService.bicep' = {
 		location: location
 		project: project
 		identifier: identifier
-		planId: appServicePlan.outputs.appServicePlanId
+		planId: appServicePlan.outputs.planId
 	}
 }
 
