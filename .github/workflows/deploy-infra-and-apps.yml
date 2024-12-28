@@ -25,7 +25,7 @@ jobs:
 
             - name: Create respource group if not exists
               run: |
-                az group show --name ${{ env.AZURE_RG_NAME }} || az groupe create -- name ${{ env.AZURE_RG_NAME }} --location ${{ secrets.AZURE_REGION }}
+                az group show --name ${{ env.AZURE_RG_NAME }} || az group create -- name ${{ env.AZURE_RG_NAME }} --location ${{ secrets.AZURE_REGION }}
 
             - name: Deploy Bicep
               id: bicep_deploy
