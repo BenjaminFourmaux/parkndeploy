@@ -5,7 +5,7 @@ param project string
 
 param identifier string
 
-module appServicePlan 'module/appServicePlan.bicep' = {
+module appServicePlan 'modules/appServicePlan.bicep' = {
 	name: 'appServicePlan'
 	params: {
 		location: location
@@ -14,7 +14,7 @@ module appServicePlan 'module/appServicePlan.bicep' = {
 	}
 }
 
-module appService 'module/appService.bicep' = {
+module appService 'modules/appService.bicep' = {
 	name: 'appService'
 	params: {
 		location: location
