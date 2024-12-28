@@ -24,4 +24,14 @@ module appService 'modules/appService.bicep' = {
 	}
 }
 
+module staticWebApp 'modules/staticWebApp.bicep' = {
+  name: 'staticWebApp'
+  params: {
+    location: swaLocation
+    project: project
+    identifier: identifier
+  }
+}
+
 output appServiceName string = appService.outputs.appServiceName
+output staticWebAppName string = staticWebApp.outputs.swaName
