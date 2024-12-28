@@ -33,6 +33,6 @@ jobs:
               with:
                 subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
                 region: ${{ secrets.AZURE_REGION }}
-                template: ./infrastructure/main.bicep
+                template: ./Infrastructure/main.bicep
                 parameters: project=${{ vars.PROJECT_NAME }} location=${{ secrets.AZURE_REGION }} identifier=${{ vars.AZURZ_RESOURCE_IDENTIFIER }}
                 resourceGroupName: ${{ env.AZURE_RG_NAME }}
