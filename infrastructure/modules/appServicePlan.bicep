@@ -7,7 +7,8 @@ resource plan 'Microsoft.Web/serverfarms@2022-09-01' = {
 	location: location
 
 	sku: {
-		name: 'F1'
+		name: 'Standard'
+		tier: 'Standard'
 	}
 
 	kind: 'app,linux'
